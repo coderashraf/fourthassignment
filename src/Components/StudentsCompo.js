@@ -9,19 +9,15 @@ import Paper from '@mui/material/Paper';
 import { NavLink } from 'react-router-dom';
 
 const StudentsCompo = () => {
-  function createData(name, course, age, batch,change) {
-    return { name, course, age, batch,change};
-  }
-  const ChangeData=(e) =>{
-    console.log(e.target);
-  }
   
   const rows = [
-    createData('Md Ashraful Huda', 35, "MERN", "Jan",<NavLink to='#'>Edit</NavLink>),
-    createData('Ravi', 23, "MERN", "Jan",<NavLink to='#'>Edit</NavLink>),
-    createData('Suraj', 26, "MERN", "Jan",<NavLink to='#'>Edit</NavLink>),
-    createData('Cupcake', 30,"MERN", "Jan",<NavLink to='#'>Edit</NavLink>),
-    createData('Gingerbread', 36, "MERN", "Jan",<NavLink to='#'>Edit</NavLink>),
+    {name:'Md Ashraful Huda',age:35,course: "MERN",batch: "Jan",change:<NavLink to='#'>Edit</NavLink>},
+    {name:'Ravi',age:35,course: "MERN",batch: "July",change:<NavLink to='#'>Edit</NavLink>},
+    {name:'Sourav',age:35,course: "MERN",batch: "November",change:<NavLink to='#'>Edit</NavLink>},
+    {name:'Zakariya',age:35,course: "MERN",batch: "December",change:<NavLink to='#'>Edit</NavLink>},
+    {name:'Suraj',age:35,course: "MERN",batch: "July",change:<NavLink to='#'>Edit</NavLink>},
+    {name:'Pavan',age:35,course: "MERN",batch: "August",change:<NavLink to='#'>Edit</NavLink>},
+    {name:'Baazigar',age:35,course: "MERN",batch: "September",change:<NavLink to='#'>Edit</NavLink>},
   ];
   return (
     <div id='studentCompo'>
